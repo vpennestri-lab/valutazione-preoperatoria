@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b524f">
+<title>Valutazione Preoperatoria · App Cliniche</title>
+<style>
+:root{
+--bg:#f4f6f8;
+--card:#ffffff;
+--ink:#1a2733;
+--ink-soft:#5b6b78;
+--line:#e2e8ee;
+--accent:#0f6e6c;
+--accent-dark:#0b524f;
+}
+*{box-sizing:border-box;}
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:var(--bg);
+color:var(--ink);
+line-height:1.5;
+}
+header{
+background:linear-gradient(135deg,#0b524f,#0f6e6c 55%,#137d78);
+color:#fff;
+padding:40px 24px 36px;
+text-align:center;
+}
+header .back{
+display:inline-block;
+color:#d6ece9;
+font-size:13px;
+text-decoration:none;
+margin-bottom:14px;
+}
+header .back:hover{color:#fff;text-decoration:underline;}
+header h1{
+margin:0 0 8px;
+font-size:28px;
+font-weight:700;
+letter-spacing:-0.01em;
+}
+header p{
+color:#d6ece9;
+font-size:15px;
+max-width:600px;
+margin:0 auto;
+}
+main{
+max-width:1000px;
+margin:0 auto;
+padding:32px 24px 56px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+.card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:14px;
+padding:22px 22px 20px;
+display:flex;
+flex-direction:column;
+gap:12px;
+transition:box-shadow .15s ease,transform .15s ease;
+}
+.card:hover{
+box-shadow:0 6px 20px rgba(15,110,108,0.12);
+transform:translateY(-2px);
+}
+.card .tag{
+font-size:11px;
+font-weight:700;
+letter-spacing:.05em;
+text-transform:uppercase;
+color:var(--accent);
+}
+.card h2{
+margin:0;
+font-size:18px;
+font-weight:650;
+color:var(--ink);
+}
+.card p{
+margin:0;
+font-size:14px;
+color:var(--ink-soft);
+flex-grow:1;
+}
+.card a.open{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:6px;
+background:var(--accent);
+color:#fff;
+text-decoration:none;
+font-size:14px;
+font-weight:600;
+padding:10px 16px;
+border-radius:8px;
+margin-top:4px;
+transition:background .15s ease;
+}
+.card a.open:hover{
+background:var(--accent-dark);
+}
+.card .link-line{
+font-size:12px;
+color:#8b98a3;
+word-break:break-all;
+}
+.note{
+margin-top:36px;
+background:#fff8e6;
+border:1px solid #f0dfae;
+border-radius:10px;
+padding:16px 18px;
+font-size:13px;
+color:#6b5820;
+}
+footer{
+text-align:center;
+font-size:12px;
+color:#9aa6b0;
+padding:0 24px 32px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<a class="back" href="https://vpennestri-lab.github.io/">← Tutte le app cliniche</a>
+<h1>Valutazione Preoperatoria</h1>
+<p>Gli strumenti per preparare il paziente alla chirurgia: valutazione di fragilità e prehabilitation, gestione dei farmaci nell'anziano e previsione della via aerea difficile.</p>
+</header>
+
+<main>
+<div class="grid">
+
+<div class="card">
+<span class="tag">Farmaci</span>
+<h2>Farmaci perioperatori nell'anziano</h2>
+<p>Inserisci paziente e intervento, seleziona i farmaci assunti: ottieni cosa sospendere, cosa continuare e cosa valutare, con i red flag geriatrici.</p>
+<a class="open" href="https://vpennestri-lab.github.io/farmaci-periop-anziano/" target="_blank" rel="noopener">Apri app →</a>
+<div class="link-line">vpennestri-lab.github.io/farmaci-periop-anziano</div>
+</div>
+
+<div class="card">
+<span class="tag">Fragilità e scale</span>
+<h2>Prehabilitation</h2>
+<p>Valutazione pre-operatoria del paziente fragile o anziano candidato a chirurgia maggiore: nove scale (NSQIP, DASI, SARC-F, AUDIT-C, HADS, Frailty Index, RCRI, STOP-Bang, Clinical Frailty Scale) in un unico percorso, con riepilogo finale.</p>
+<a class="open" href="https://vpennestri-lab.github.io/prehabilitation/" target="_blank" rel="noopener">Apri app →</a>
+<div class="link-line">vpennestri-lab.github.io/prehabilitation</div>
+</div>
+
+<div class="card">
+<span class="tag">Via aerea</span>
+<h2>Predizione di Intubazione Difficile</h2>
+<p>Test clinici e scores per prevedere la via aerea difficile nell'adulto: Mallampati, upper lip bite test, El-Ganzouri, Wilson, LEMON e MACOCHA, con calcolatori, probabilità post-test e report stampabile in PDF.</p>
+<a class="open" href="https://vpennestri-lab.github.io/intubazione-difficile/" target="_blank" rel="noopener">Apri app →</a>
+<div class="link-line">vpennestri-lab.github.io/intubazione-difficile</div>
+</div>
+
+</div>
+
+<div class="note"><strong>Uso clinico.</strong> Strumenti di supporto alla decisione per uso professionale: non sostituiscono il giudizio clinico né i protocolli locali. Ogni app si apre in una nuova scheda.</div>
+</main>
+
+<footer>
+vpennestri-lab · Valutazione Preoperatoria
+</footer>
+
+</body>
+</html>
